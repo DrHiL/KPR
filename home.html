@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPR - Kampu Property Rental</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <div class="logo-box">
+                    <img src="Pictures/logo.png" alt="KPR logo">
+                </div>
+
+                <div>
+                    <h2>KPR</h2>
+                    <span>Kampu Property Rental</span>
+                </div>
+            </div>
+
+            <nav id="main-nav">
+                <a href="#">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    About
+                </a>
+                <a href="#">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    Browse
+                </a>
+
+                <a href="#">
+                    <!-- <i class="fa-solid fa-users"></i> -->
+                    Find Roommate
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login
+                </a>
+            </nav>
+
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero">
+        <video src="/Pictures/city-view-at-night.mp4" autoplay muted loop plays-inline class="background-clip">
+            <source src="Pictures/city-view-at-night.mp4" type="video/mp">
+        </video>
+
+        <h1 class="h1-color">Find Your Perfect Home in Cambodia</h1>
+        <p>
+            Browse thousands of rental properties and find roommates
+            to share your journey
+        </p>
+
+        <div class="search-card">
+
+            <div class="filters">
+
+                <div class="filter-box">
+                    <label>BUDGET</label>
+                    <select>
+                        <option>Any budget</option>
+                        <option>Under $150</option>
+                        <option>$150 - $300</option>
+                        <option>$300 - $600</option>
+                    </select>
+                </div>
+
+                <div class="filter-box">
+                    <label>LOCATION</label>
+                    <select>
+                        <option>Anywhere in Kampu</option>
+                        <option>Toul Kork</option>
+                        <option>Chamkar Mon</option>
+                        <option>BKK1</option>
+                    </select>
+                </div>
+
+                <div class="filter-box">
+                    <label>PROPERTY TYPE</label>
+                    <select>
+                        <option>All types</option>
+                        <option>Room</option>
+                        <option>House</option>
+                        <option>Villa</option>
+                        <option>Condo</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="search-row">
+                <input
+                    type="text"
+                    placeholder="Search by location, property name..."
+                >
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+<section class="container famous">
+    <div class="famous-title">
+        <h2>Famous Area</h2>            
+    </div>
+
+    <!-- The Flexbox Row Container -->
+    <div class="famous-row">            
+        <!-- Card 1: Phnom Penh -->
+        <div class="each-area">            
+            <img src="Pictures/Phnompenh.jpg" alt="Phnom Penh"> 
+            <div class="each-area-photo-text">
+                <h3><a class="photo-text-title" href="#">Phnom Penh</a></h3>
+                <p class="photo-text-quantity">523 listings</p>
+            </div>
+        </div>
+
+        <!-- Card 2: Siem Reap -->
+        <div class="each-area">            
+            <img src="Pictures/Siemreap.jpg" alt="Siem Reap"> 
+            <div class="each-area-photo-text">
+                <h3><a class="photo-text-title" href="#">Siem Reap</a></h3>
+                <p class="photo-text-quantity">312 listings</p>
+            </div>
+        </div>
+
+        <!-- Card 3: Sihanoukville -->
+        <div class="each-area">            
+            <img src="Pictures/kohrong.jpg" alt="Sihanoukville"> 
+            <div class="each-area-photo-text">
+                <h3><a class="photo-text-title" href="#">Sihanoukville</a></h3>
+                <p class="photo-text-quantity">184 listings</p>
+            </div>
+        </div>
+
+        <!-- Card 4: Kampot -->
+        <div class="each-area">            
+            <img src="Pictures/Kampot.jpg" alt="Kampot"> 
+            <div class="each-area-photo-text">
+                <h3><a class="photo-text-title" href="#">Kampot</a></h3>
+                <p class="photo-text-quantity">95 listings</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Moved OUTSIDE .famous-row so it's no longer treated as a 5th flex item -->
+    <div class="btn-see-more">
+        <a href="">See more</a>
+    </div>
+
+</section>
+
+
+
+
+
+
+    
+
+    <!-- Featured Properties -->
+    <section class="container featured">
+
+        <div class="section-title">
+            <h2>Featured Properties</h2>
+            <a href="" class="view-all">View All</a>
+        </div>
+
+        <div class="property-grid">
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800"
+                    alt="property">
+
+                <div class="card-content">
+
+                    <h3>Modern Room Near RUPP</h3>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Toul Kork
+                    </p>
+
+                    <p>
+                        Comfortable room perfect for students.
+                        Close to universities and public transport.
+                    </p>
+
+                    <div class="price">$150 <span>/ month</span></div>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=800"
+                    alt="property">
+
+                <div class="card-content">
+
+                    <h3>Affordable Student Room</h3>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Boeung Keng Kang
+                    </p>
+
+                    <p>
+                        Budget-friendly room near ITC.
+                        Safe neighborhood with security.
+                    </p>
+
+                    <div class="price">$100 <span>/ month</span></div>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800"
+                    alt="property">
+
+                <div class="card-content">
+
+                    <h3>Spacious 2-Bedroom House</h3>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Russian Blvd
+                    </p>
+
+                    <p>
+                        Beautiful house with garden.
+                        Great for families and groups.
+                    </p>
+
+                    <div class="price">$400 <span>/ month</span></div>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800"
+                    alt="property">
+
+                <div class="card-content">
+
+                    <h3>Cozy Studio Near BKK1</h3>
+
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        BKK1
+                    </p>
+
+                    <p>
+                        Fully furnished studio in a lively area.
+                        Walking distance to cafes and offices.
+                    </p>
+
+                    <div class="price">$250 <span>/ month</span></div>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>  
+
+    <!-- Most Liked Rooms -->
+    <section class="container most-liked">
+
+        <div class="section-title">
+            <h2>Most Liked Rooms</h2>
+            <a href="" class="view-all">View All</a>
+        </div>
+
+        <div class="liked-grid">
+
+            <div class="liked-card">
+
+                <div class="liked-image">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+                        alt="property">
+                </div>
+
+                <div class="liked-content">
+
+                    <h3>Sunny Room in Riverside Condo</h3>
+
+                    <div class="liked-meta">
+                        <span class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            BKK1
+                        </span>
+                        <span class="likes">
+                            <i class="fa-solid fa-heart"></i>
+                            34 Likes
+                        </span>
+                    </div>
+
+                    <p class="desc">
+                        Bright, quiet room with a great view.
+                        Includes gym and pool access.
+                    </p>
+
+                    <div class="price">$220 <span>/ month</span></div>
+
+                    <!-- Owner + contact row, from the sketch -->
+                    <div class="owner-row">
+                        <div class="owner-info">
+                            <i class="fa-solid fa-circle-user owner-avatar"></i>
+                            <span class="owner-name">Sokha</span>
+                        </div>
+                        <div class="owner-actions">
+                            <a href="#" class="icon-btn" title="Contact owner">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                            <a href="#" class="icon-btn" title="View location">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="liked-card">
+
+                <div class="liked-image">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800"
+                        alt="property">
+                </div>
+
+                <div class="liked-content">
+
+                    <h3>Charming Room with City View</h3>
+
+                    <div class="liked-meta">
+                        <span class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Toul Kork
+                        </span>
+                        <span class="likes">
+                            <i class="fa-solid fa-heart"></i>
+                            97 Likes
+                        </span>
+                    </div>
+
+                    <p class="desc">
+                        Newly renovated, close to markets
+                        and public transport.
+                    </p>
+
+                    <div class="price">$180 <span>/ month</span></div>
+
+                    <div class="owner-row">
+                        <div class="owner-info">
+                            <i class="fa-solid fa-circle-user owner-avatar"></i>
+                            <span class="owner-name">Dara</span>
+                        </div>
+                        <div class="owner-actions">
+                            <a href="#" class="icon-btn" title="Contact owner">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                            <a href="#" class="icon-btn" title="View location">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="liked-card">
+
+                <div class="liked-image">
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800"
+                        alt="property">
+                </div>
+
+                <div class="liked-content">
+
+                    <h3>Fully Furnished Studio Apartment</h3>
+
+                    <div class="liked-meta">
+                        <span class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chamkar Mon
+                        </span>
+                        <span class="likes">
+                            <i class="fa-solid fa-heart"></i>
+                            84 Likes
+                        </span>
+                    </div>
+
+                    <p class="desc">
+                        Modern studio with kitchenette.
+                        Perfect for young professionals.
+                    </p>
+
+                    <div class="price">$300 <span>/ month</span></div>
+
+                    <div class="owner-row">
+                        <div class="owner-info">
+                            <i class="fa-solid fa-circle-user owner-avatar"></i>
+                            <span class="owner-name">Rachana</span>
+                        </div>
+                        <div class="owner-actions">
+                            <a href="#" class="icon-btn" title="Contact owner">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                            <a href="#" class="icon-btn" title="View location">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+     <!-- CTA  -->
+    <section class="cta">
+
+        <h2>Ready to Find Your Home?</h2>
+
+        <p>
+            Join thousands of renters and landlords
+            on Kampu's premier rental platform
+        </p>
+
+        <div class="cta-buttons">
+            <button>Browse Properties</button>
+            <button>Find Roommates</button>
+        </div>
+
+    </section> 
+
+    <!-- Statistics  -->
+    <section class="stats">
+
+        <div>
+            <h2>1000+</h2>
+            <p>Properties Listed</p>
+        </div>
+
+        <div>
+            <h2>500+</h2>
+            <p>Happy Renters</p>
+        </div>
+
+        <div>
+            <h2>200+</h2>
+            <p>Verified Landlords</p>
+        </div>
+
+        <div>
+            <h2>150+</h2>
+            <p>Roommate Matches</p>
+        </div>
+
+    </section> 
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-top">
+
+            <!-- Brand column: logo, tagline, socials -->
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-box">
+                        <img src="Pictures/logo.png" alt="KPR logo">
+                    </div>
+                    <div>
+                        <h2>KPR</h2>
+                        <span>Kampu Property Rental</span>
+                    </div>
+                </div>
+
+                <p class="footer-tagline">
+                    Helping you find the right room, house, or roommate
+                    across Cambodia.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links column -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">Browse Properties</a>
+                <a href="#">Find Roommate</a>
+                <a href="#">Most Liked Rooms</a>
+                <a href="#">Login</a>
+            </div>
+
+            <!-- Support column -->
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">FAQ</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <!-- Contact column -->
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
+                <p><i class="fa-solid fa-envelope"></i> hello@kpr.com</p>
+                <p><i class="fa-solid fa-phone"></i> +855 12 345 678</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 KPR - Kampu Property Rental. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
