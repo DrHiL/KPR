@@ -65,6 +65,13 @@ nav a{
     font-weight:600;
 }
 
+nav a:hover{
+    color: red;
+}
+
+nav a:focus {
+    color:blue;
+}
 /* HAMBURGER BUTTON */
 
 .hamburger{
@@ -320,12 +327,6 @@ nav a{
     background-color: red;    /* Fills the button with red when mouse rolls over it */
     color: white;             /* Flips text to white so it remains perfectly legible */
 }
-
-
-
-
-
-
 
 
 
