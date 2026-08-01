@@ -1,6 +1,4 @@
-/* =========================================
-   DEFAULT LISTINGS (COMPLETED)
-========================================= */
+
 const defaultListings = [
   {
     id: 1,
@@ -118,9 +116,7 @@ const defaultListings = [
   }
 ];
 
-/* =========================================
-   DOM INTERACTION & RENDERING LOGIC
-========================================= */
+
 document.addEventListener("DOMContentLoaded", () => {
   let listings = [...defaultListings];
   let currentFilter = "all";
