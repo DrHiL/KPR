@@ -12,8 +12,6 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-
-    <!-- Navigation -->
     <header>
         <div class="container navbar">
             <div class="logo">
@@ -22,35 +20,18 @@
                 </div>
 
                 <div>
-                    <h2>KPR</h2>
+                    <h2><a href="Index.html">KPR</a></h2>
                     <span>Kampu Property Rental</span>
                 </div>
             </div>
 
             <nav id="main-nav">
-                <a href="Index.html">
-                    
-                    Home
-                </a>  
-                <a href="#">
-                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                    About
-                </a>
-                <a href="#">
-                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                    Browse
-                </a>
-
-                <a href="Roommate.html">
-                    <!-- <i class="fa-solid fa-users"></i> -->
-                    Find Roommate
-                </a>
-
-                <a href="#">                
-                    Login
-                </a>
+                <a href="Index.html"> Home </a>  
+                <a href="About.html"> About </a>
+                <a href="Browse.html">Browse</a>
+                <a href="Roommate.html">Find Roommate </a>
+                <a href="Login.html"> Login</a>
             </nav>
-
             <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -130,9 +111,8 @@
         <h2>Famous Area</h2>            
     </div>
 
-    <!-- The Flexbox Row Container -->
+    <!-- This section will display the famous area for residents in Cambodia -->
     <div class="famous-row">            
-        <!-- Card 1: Phnom Penh -->
         <div class="each-area">            
             <img src="/assets/pictures/Phnompenh.jpg" alt="Phnom Penh"> 
             <div class="each-area-photo-text">
@@ -141,7 +121,6 @@
             </div>
         </div>
 
-        <!-- Card 2: Siem Reap -->
         <div class="each-area">            
             <img src="/assets/pictures/Siemreap.jpg" alt="Siem Reap"> 
             <div class="each-area-photo-text">
@@ -150,7 +129,6 @@
             </div>
         </div>
 
-        <!-- Card 3: Sihanoukville -->
         <div class="each-area">            
             <img src="/assets/pictures/kohrong.jpg" alt="Sihanoukville"> 
             <div class="each-area-photo-text">
@@ -159,7 +137,6 @@
             </div>
         </div>
 
-        <!-- Card 4: Kampot -->
         <div class="each-area">            
             <img src="/assets/pictures/Kampot.jpg" alt="Kampot"> 
             <div class="each-area-photo-text">
@@ -169,39 +146,23 @@
         </div>
 
     </div>
-    <!-- Moved OUTSIDE .famous-row so it's no longer treated as a 5th flex item -->
-    <!-- <div class="btn-see-more">
-        <a href="">See more</a>
-    </div> -->
-
 </section>
 
-
-
-
-
-
-    
-
-    <!-- Featured Properties -->
+    <!-- Highlight Properties-->
     <section class="container featured">
 
         <div class="section-title">
             <h2>Featured Properties</h2>
-            <a href="" class="view-all">View All</a>
+            <a href="Browse.html" class="view-all">View All</a>
         </div>
 
         <div class="property-grid">
 
             <div class="card">
-
                 <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800"
                     alt="property">
-
                 <div class="card-content">
-
                     <h3>Modern Room Near RUPP</h3>
-
                     <p class="location">
                         <i class="fa-solid fa-location-dot"></i>
                         Toul Kork
@@ -222,40 +183,27 @@
             </div>
 
             <div class="card">
-
                 <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=800"
                     alt="property">
-
                 <div class="card-content">
-
                     <h3>Affordable Student Room</h3>
-
                     <p class="location">
                         <i class="fa-solid fa-location-dot"></i>
                         Boeung Keng Kang
                     </p>
-
                     <p>
-                        Budget-friendly room near ITC.
-                        Safe neighborhood with security.
+                        Budget-friendly room near ITC. Safe neighborhood with security.
                     </p>
-
                     <div class="price">$100 <span>/ month</span></div>
-
                     <button class="details-btn">
                         View Details
                     </button>
-
                 </div>
             </div>
-
             <div class="card">
-
                 <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800"
                     alt="property">
-
                 <div class="card-content">
-
                     <h3>Spacious 2-Bedroom House</h3>
 
                     <p class="location">
@@ -264,8 +212,7 @@
                     </p>
 
                     <p>
-                        Beautiful house with garden.
-                        Great for families and groups.
+                        Beautiful house with garden. Great for families and groups.
                     </p>
 
                     <div class="price">$400 <span>/ month</span></div>
@@ -273,7 +220,6 @@
                     <button class="details-btn">
                         View Details
                     </button>
-
                 </div>
             </div>
 
@@ -290,12 +236,9 @@
                         <i class="fa-solid fa-location-dot"></i>
                         BKK1
                     </p>
-
                     <p>
-                        Fully furnished studio in a lively area.
-                        Walking distance to cafes and offices.
+                        Fully furnished studio in a lively area. Walking distance to cafes and offices.
                     </p>
-
                     <div class="price">$250 <span>/ month</span></div>
 
                     <button class="details-btn">
@@ -314,7 +257,7 @@
 
         <div class="section-title">
             <h2>Most Liked Rooms</h2>
-            <a href="" class="view-all">View All</a>
+            <a href="Browse.html" class="view-all">View All</a>
         </div>
 
         <div class="liked-grid">
@@ -465,23 +408,6 @@
 
     </section>
 
-     <!-- CTA  -->
-    <section class="cta">
-
-        <h2>Ready to Find Your Home?</h2>
-
-        <p>
-            Join thousands of renters and landlords
-            on Kampu's premier rental platform
-        </p>
-
-        <div class="cta-buttons">
-            <button>Browse Properties</button>
-            <button>Find Roommates</button>
-        </div>
-
-    </section> 
-
     <!-- Statistics  -->
     <section class="stats">
 
@@ -540,10 +466,10 @@
             <!-- Quick Links column -->
             <div class="footer-links">
                 <h4>Quick Links</h4>
-                <a href="#">Browse Properties</a>
-                <a href="#">Find Roommate</a>
-                <a href="#">Most Liked Rooms</a>
-                <a href="#">Login</a>
+                <a href="Browse.html">Browse Properties</a>
+                <a href="Roommate.html">Find Roommate</a>
+                <a href="Browse.html">Most Liked Rooms</a>
+                <a href="Login.html">Login</a>
             </div>
 
             <!-- Support column -->
@@ -559,7 +485,7 @@
             <div class="footer-contact">
                 <h4>Contact</h4>
                 <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
-                <p><i class="fa-solid fa-envelope"></i> hello@kpr.com</p>
+                <p><i class="fa-solid fa-envelope"></i> ThyrithSupports@kpr.com</p>
                 <p><i class="fa-solid fa-phone"></i> +855 12 345 678</p>
             </div>
 

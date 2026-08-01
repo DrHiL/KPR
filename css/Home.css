@@ -40,13 +40,13 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-    overflow:hidden;         /* keeps the image from spilling outside the box */
+    overflow:hidden;        
 }
 
 .logo-box img{
     width:100%;
     height:100%;
-    object-fit:contain;      /* scales your logo to fit without stretching it */
+    object-fit:contain;     
 }
 
 .logo span{
@@ -95,7 +95,6 @@ nav a:focus {
     transition:transform 0.3s, opacity 0.3s;
 }
 
-/* Animate to X when active */
 .hamburger.active span:nth-child(1){
     transform:translateY(7px) rotate(45deg);
 }
@@ -107,7 +106,6 @@ nav a:focus {
 }
 
 /* HERO */
-
 .hero{
     position: relative;
     width: 100%;
@@ -140,15 +138,13 @@ nav a:focus {
 
 .hero h1{
     font-size:85px;
-    /* color:rgb(8, 8, 8); */
     margin-bottom:20px;
     padding-top: 7%;
     font-family:'Times New Roman', Times, serif;
     background: linear-gradient(to right, #ffffff, #e6d8d8, rgb(74, 144, 234) , rgb(213, 125, 125), rgb(144, 141, 179) );
-    /* 2. Clip the gradient to the text shape */
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;/* 3. Make original color transparent to show the gradient */
+    color: transparent;
 
 }
 
@@ -160,10 +156,9 @@ nav a:focus {
     color: rgb(148, 50, 50);
     font-family: monospace;
     background: linear-gradient(to left, #d9eee1, #0b0707, rgb(27, 227, 97) , rgb(137, 180, 235), #3af130 );
-    /* 2. Clip the gradient to the text shape */
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;/* 3. Make original color transparent to show the gradient */
+    color: transparent;
 }
 
 .search-card{
@@ -234,106 +229,87 @@ nav a:focus {
 }
 
 /* --- The Layout Row Container --- */
-
 .famous-row {
-    display: flex;                 /* Forces cards onto a single line */
-    justify-content: space-between; /* Even spacing across the screen */
-    gap: 20px;                     /* Creates a uniform space between cards */
+    display: flex;                 
+    justify-content: space-between; 
+    gap: 20px;                    
     width: 100%;
     box-sizing: border-box;
 }
-
-/* --- Card Container Styles --- */
 .each-area {
-    position: relative;            /* Absolute anchor for the text layer */
-    overflow: hidden;              /* Hides image edges and keeps 50px corners rounded */
+    position: relative; 
+    overflow: hidden;   
     border-radius: 50px;
     margin-left : 1%;
-    width: calc(25% - 15px);       /* Fits 4 cards exactly on 1 line accounting for gaps */
+    width: calc(25% - 15px);
     height: 400px;
 }
 
-/* --- Image Behavior --- */
 .each-area img {
     width: 100%;
     height: 100%;
-    object-fit: cover;             /* Scales/crops image cleanly without stretching */
-    display: block;                /* Remediation for vertical spacing bugs */
+    object-fit: cover;             
+    display: block;               
 }
 
-/* --- Text Overlay Container --- */
 .each-area-photo-text {
-    position: absolute;            /* Lifts text onto a layer above the picture */
-    bottom: 0;                     /* Attaches layout card to the bottom edge */
+    position: absolute;           
+    bottom: 0;                    
     left: 0;
     width: 100%;
     padding: 30px;
-    box-sizing: border-box;        /* Keeps padding from stretching the card width */
-    
-    /* A safe dark fade up from black to transparent for text legibility */
+    box-sizing: border-box;       
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-/* --- Inner Link Title --- */
 .photo-text-title {
-    display: block;                /* Allows correct layout width constraints */
-    color: #ffffff;                /* Forces text to show white over the links */
-    text-decoration: none;         /* Drops the default web hyperlink underline */
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
     font-family: sans-serif;
-    
-    /* Safely clips title layout down if text gets too long */
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
 }
 
-/* --- Inner Subtext --- */
+
 .photo-text-quantity {
     color: #e0e0e0;
+    margin: 6px 0 0 0;
     font-size: 14px;
-    margin: 6px 0 0 0;             /* Clean break spacing below header link */
     font-family: sans-serif;
 }
 
 
 .btn-see-more {
     margin-top: 24px;
-    margin-left: 2%;   /* Centers the button horizontally below your cards */
+    margin-left: 2%;
     width: fit-content;
-           /* Shrinks the button box tightly around the text */
 }
 
 .btn-see-more a {
-    display: inline-block;    /* Allows padding and width settings to work properly */
-    border: 2px solid red;    /* The border you wanted */
-    border-radius: 50px;      /* Rounded pill-shape design */
-    padding: 12px 35px;       /* Breathing room inside the button (top/bottom, left/right) */
-    
-    color: rgb(0, 0, 0);               /* Text color matches the border */
+    display: inline-block;
+    border: 2px solid red;
+    border-radius: 50px;   
+    padding: 12px 35px;    
+    color: rgb(0, 0, 0);  
     font-size: 16px;
     font-weight: 600;
     font-family: sans-serif;
-    text-decoration: none;    /* Removes the default hyperlink underline line */
-    
-    transition: all 0.3s ease; /* Makes the color switch smooth when hovering */
+    text-decoration: none; 
+    transition: all 0.3s ease;
 }
 
-/* ⚠️ ADD THIS HOVER EFFECT FOR A PREMIUM FEEL ⚠️ */
 .btn-see-more a:hover {
-    background-color: red;    /* Fills the button with red when mouse rolls over it */
-    color: white;             /* Flips text to white so it remains perfectly legible */
+    background-color: red;
+    color: white;         
 }
-
-
-
-
 
 /* FEATURED */
-
 .featured{
     padding:80px 0;
     
@@ -342,7 +318,7 @@ nav a:focus {
 .view-all {
     font-size: 14px;
     font-weight: 600;
-    color: #2563eb;              /* matches your site's blue accent */
+    color: #2563eb;              
     background-color: transparent;
     text-decoration: none;
     border: 2px solid #2563eb;
@@ -351,7 +327,7 @@ nav a:focus {
     transition: all 0.3s ease;
 }
 
-/* Fills blue on hover, same idea as .btn-see-more a:hover */
+
 .view-all:hover {
     background-color: #2563eb;
     color: white;
@@ -418,19 +394,18 @@ nav a:focus {
 }
 
 /* MOST LIKED ROOMS */
-
 .most-liked{
     padding-bottom:80px;
 }
 
 .liked-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);   /* 3 per row */
+    grid-template-columns:repeat(3,1fr);   
     gap:25px;
 }
 
 .liked-card{
-    display:flex;                 /* image sits beside the content, not on top */
+    display:flex;                 
     background:white;
     border-radius:15px;
     overflow:hidden;
@@ -438,7 +413,7 @@ nav a:focus {
 }
 
 .liked-image{
-    flex:0 0 42%;                 /* image takes roughly 42% of the card width */
+    flex:0 0 42%;                 
 }
 
 .liked-image img{
@@ -468,7 +443,7 @@ nav a:focus {
 }
 
 .liked-meta .likes i{
-    color:#ef4444;                /* red heart, matches the sketch */
+    color:#ef4444;               
     margin-right:4px;
 }
 
@@ -481,7 +456,6 @@ nav a:focus {
     color:#555;
 }
 
-/* Pushes the owner row to the bottom of the card even if descriptions vary in length */
 .owner-row{
     margin-top:auto;
     display:flex;
@@ -532,37 +506,6 @@ nav a:focus {
     color:white;
 }
 
-/* CTA */
-
-.cta{
-    background:linear-gradient(90deg,#2563eb,#1e40af);
-    color:white;
-    text-align:center;
-    padding:70px 20px;
-}
-
-.cta h2{
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.cta p{
-    margin-bottom:25px;
-}
-
-.cta-buttons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-}
-
-.cta-buttons button{
-    padding:12px 25px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-}
-
 /* STATS */
 
 .stats{
@@ -582,9 +525,8 @@ nav a:focus {
 }
 
 /* FOOTER */
-
 .footer{
-    background:#020617;      /* same dark navy already used on your buttons/CTA */
+    background:#020617;      
     color:#b5b9c6;
     margin-top:60px;
 }
@@ -596,7 +538,6 @@ nav a:focus {
     padding:60px 0 40px;
 }
 
-/* Override the navbar logo's default dark text so it reads on a dark background */
 .footer-brand .logo h2{
     color:white;
 }
@@ -677,7 +618,6 @@ nav a:focus {
 }
 
 /* RESPONSIVE */
-
 @media(max-width:900px){
 
     .hero h1{
@@ -697,7 +637,7 @@ nav a:focus {
     }
 
     .liked-card{
-        flex-direction:column;   /* image moves back on top on small screens so it isn't squeezed */
+        flex-direction:column;   
     }
 
     .liked-image{
@@ -717,8 +657,7 @@ nav a:focus {
         flex-direction:column;
         gap:30px;
     }
-
-    /* Show hamburger, hide desktop nav */
+    
     .hamburger{
         display:flex;
     }
